@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Select Wallet</title>
+  <style>
+    body {
+      margin: 0;
+      background-color: #001d3d;
+      font-family: 'Segoe UI', sans-serif;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    h1 {
+      margin: 60px 0 40px 0;
+      font-size: 2.5rem;
+      border-bottom: 2px solid #00b4d8;
+      padding-bottom: 10px;
+    }
+    .wallet-btn {
+      background: linear-gradient(to right, #00b4d8, #0077b6);
+      border: none;
+      color: white;
+      padding: 15px 30px;
+      border-radius: 30px;
+      font-size: 1.2rem;
+      margin: 10px;
+      cursor: pointer;
+      width: 250px;
+      transition: background 0.3s;
+    }
+    .wallet-btn:hover {
+      background: linear-gradient(to right, #0077b6, #00b4d8);
+    }
+    .buy-btn {
+      background: linear-gradient(to right, #00b4d8, #0077b6);
+      border: none;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 30px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    .buy-btn:hover {
+      background: linear-gradient(to right, #0077b6, #00b4d8);
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #000814;
+      padding: 15px;
+      gap: 20px;
+      border-bottom: 2px solid #00b4d8;
+      width: 100%;
+      box-sizing: border-box;
+    }
+  </style>
+</head>
+<body>
+    <nav>
+      <button onclick="location.href='index.html'" class="buy-btn">Home</button>
+      <button onclick="location.href='mission.html'" class="buy-btn">Mission</button>
+      <button onclick="location.href='whitepaper.html'" class="buy-btn">White Paper</button>
+      <button onclick="location.href='marketplace.html'" class="buy-btn">Action / Market Place</button>
+      <button onclick="location.href='presentation.html'" class="buy-btn">Introduction</button>
+      <button onclick="window.location.href='wallet-select.html'" class="buy-btn">Connect Wallet</button>
+    </nav>
+  
+    <div style="display: flex; align-items: center; justify-content: center; gap: 40px; margin-top: 60px;">
+      <!-- Immagine sinistra -->
+      <img src="Locandina.png" alt="Blockchain Sailing Team" style="width: 400px; border-radius: 20px; box-shadow: 0 0 15px rgba(0,0,0,0.4);">
+  
+      <!-- Contenuto centrale -->
+      <div style="text-align: center;">
+        <h1 style="margin-bottom: 30px;">Select Your Wallet</h1>
+        <button class="wallet-btn">MetaMask</button><br>
+        <button class="wallet-btn">Coinbase Wallet</button><br>
+        <button class="wallet-btn">Trust Wallet</button><br>
+        <button class="wallet-btn">Ledger</button>
+        <button class="wallet-btn">Gate.io</button><br>
+      </div>
+  
+      <!-- GIF destra -->
+      <img src="20250511_0919_3D Token Transformation_storyboard_01jtz3ca53fhar3g94je1xrf2b.gif" alt="Token Animation" style="width: 300px; border-radius: 20px; box-shadow: 0 0 15px rgba(0,0,0,0.4);">
+    </div>
+  </body>
+</html>

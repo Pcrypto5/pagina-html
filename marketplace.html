@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yacht NFT Marketplace</title>
+  <style>
+    body {
+      margin: 0;
+      background-color: #001d3d;
+      font-family: 'Segoe UI', sans-serif;
+      color: white;
+    }
+    .container {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      justify-content: center;
+      gap: 40px;
+      padding: 50px;
+      max-width: 1400px;
+      margin: auto;
+    }
+    .image-side {
+      flex: 1;
+    }
+    .image-side img {
+      max-width: 100%;
+      border-radius: 20px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+    }
+    .marketplace {
+      flex: 1;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-gap: 30px;
+    }
+    .nft-card {
+      background-color: #003566;
+      border-radius: 20px;
+      padding: 30px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+      text-align: center;
+      transition: transform 0.3s;
+    }
+    .nft-card:hover {
+      transform: translateY(-5px);
+    }
+    .nft-title {
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+    }
+    .nft-price {
+      font-size: 1.25rem;
+      color: #00d4ff;
+      margin-bottom: 20px;
+    }
+    .buy-btn {
+      background: linear-gradient(to right, #00b4d8, #0077b6);
+      border: none;
+      color: white;
+      padding: 12px 24px;
+      border-radius: 30px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    .buy-btn:hover {
+      background: linear-gradient(to right, #0077b6, #00b4d8);
+    }
+    .header {
+      text-align: center;
+      padding: 40px;
+      font-size: 2rem;
+      background: #000814;
+      border-bottom: 2px solid #0077b6;
+    }
+  </style>
+</head>
+<body>
+  <nav style="display: flex; justify-content: center; align-items: center; background: #000814; padding: 15px; gap: 20px; border-bottom: 2px solid #0077b6;">
+    <button onclick="location.href='index.html'" class="buy-btn">Home</button>
+    <button onclick="location.href='mission.html'" class="buy-btn">Mission</button>
+    <button onclick="location.href='whitepaper.html'" class="buy-btn">White Paper</button>
+    <button onclick="location.href='marketplace.html'" class="buy-btn">Action / Market Place</button>
+    <button onclick="location.href='presentation.html'" class="buy-btn">introduction</button>
+    <button onclick="window.location.href='wallet-select.html'" class="buy-btn">Connect Wallet</button>
+  </nav>
+  <div class="header">Action NFT Sponsor Yacht Parts Marketplace</div>
+  <div class="container">
+    <div class="image-side">
+      <img src="nft-yacht-diagram.png" alt="NFT Yacht Diagram">
+    </div>
+    <div class="marketplace">
+        <div class="nft-card">
+        <div class="nft-title">Hull</div>
+        <div class="nft-price">5.2 BCST</div>
+        <button class="buy-btn" onclick="location.href='nft-hull-detail.html'">Buy</button>
+       </div>
+      <div class="nft-card">
+        <div class="nft-title">Sail</div>
+        <div class="nft-price">3.5 BCST</div>
+        <button class="buy-btn">Buy</button>
+      </div>
+      <div class="nft-card">
+        <div class="nft-title">Rudder</div>
+        <div class="nft-price">1.8 BCST</div>
+        <button class="buy-btn">Buy</button>
+      </div>
+      <div class="nft-card">
+        <div class="nft-title">Foil (Left)</div>
+        <div class="nft-price">2.3 BCST</div>
+        <button class="buy-btn">Buy</button>
+      </div>
+      <div class="nft-card">
+        <div class="nft-title">Foil (Right)</div>
+        <div class="nft-price">2.5 BCST</div>
+        <button class="buy-btn">Buy</button>
+      </div>
+    </div>
+  </div>
+  <div style="text-align: center; margin-top: 40px;">
+    <button onclick="window.location.href='wallet-select.html'" class="buy-btn">Connect Wallet</button>
+  </div>
+</body>
+</html>
