@@ -5,6 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Home</title>
   <style>
+    *, *::before, *::after {
+      box-sizing: border-box;
+    }
+
     body {
       margin: 0;
       background-color: #001d3d;
@@ -14,12 +18,16 @@
       flex-direction: column;
       align-items: center;
     }
+
     h1 {
       font-size: 2.5rem;
       border-bottom: 2px solid #00b4d8;
       padding-bottom: 10px;
-      margin-top: 60px;
+      margin: 60px 20px 0 20px;
+      text-align: center;
+      max-width: 90%;
     }
+
     .buy-btn {
       background: linear-gradient(to right, #00b4d8, #0077b6);
       border: none;
@@ -29,20 +37,49 @@
       font-size: 1rem;
       cursor: pointer;
       transition: background 0.3s;
+      flex: 1 1 auto;
+      min-width: 140px;
     }
+
     .buy-btn:hover {
       background: linear-gradient(to right, #0077b6, #00b4d8);
     }
+
     nav {
       display: flex;
+      flex-wrap: wrap;
       justify-content: center;
       align-items: center;
       background: #000814;
       padding: 15px;
-      gap: 20px;
+      gap: 10px;
       border-bottom: 2px solid #00b4d8;
       width: 100%;
-      box-sizing: border-box;
+    }
+
+    .video-container {
+      display: flex;
+      justify-content: center;
+      margin: 40px 20px;
+      width: 100%;
+      max-width: 800px;
+    }
+
+    video {
+      width: 100%;
+      height: auto;
+      border-radius: 20px;
+    }
+
+    @media (max-width: 600px) {
+      .buy-btn {
+        font-size: 0.9rem;
+        padding: 8px 16px;
+      }
+
+      h1 {
+        font-size: 2rem;
+      }
     }
   </style>
 </head>
@@ -52,13 +89,13 @@
     <button onclick="location.href='mission.html'" class="buy-btn">Mission</button>
     <button onclick="location.href='whitepaper.html'" class="buy-btn">White Paper</button>
     <button onclick="location.href='marketplace.html'" class="buy-btn">Action / Market Place</button>
-    <button onclick="location.href='presentation.html'" class="buy-btn">introduction</button>
-    <button onclick="window.location.href='wallet-select.html'" class="buy-btn">Connect Wallet</button>
+    <button onclick="location.href='presentation.html'" class="buy-btn">Introduction</button>
+    <button onclick="location.href='wallet-select.html'" class="buy-btn">Connect Wallet</button>
   </nav>
 
   <h1>Welcome to the NFT Yacht Project</h1>
-  <div style="display: flex; justify-content: center; margin-top: 40px;">
-    <video src="20250510_1451_Dynamic 3D Sphere Transformation_storyboard_01jtx3ztv0ergtgybcce1jzmyh.mp4" autoplay loop muted width="520" height="520" style="border-radius: 20px;"></video>
+  <div class="video-container">
+    <video src="20250510_1451_Dynamic 3D Sphere Transformation_storyboard_01jtx3ztv0ergtgybcce1jzmyh.mp4" autoplay loop muted></video>
   </div>
 </body>
 </html>
